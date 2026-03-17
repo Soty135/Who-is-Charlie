@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who is Charlie - Son of Griselda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="banner">
+        <img src="banner.jpg" alt="Who is Charlie - Son of Griselda" id="event-banner">
+    </header>
+
+    <main>
+        <section class="event-info">
+            <h1>Who is Charlie</h1>
+            <p class="subtitle">Son of Griselda</p>
+            <div class="details">
+                <p><strong>Date:</strong> Saturday 20th June 2026</p>
+                <p><strong>Venue:</strong> Silverbird Cinema, Victoria Island, Lagos</p>
+                <p class="presenter">Presented by Hybrid Vibes Entertainment</p>
+            </div>
+        </section>
+
+        <section class="tickets">
+            <h2>Get Your Tickets</h2>
+            
+            <div class="ticket-item">
+                <div class="ticket-info">
+                    <h3>Classy</h3>
+                    <p class="price">₦10,000</p>
+                </div>
+                <div class="ticket-controls">
+                    <button class="btn-minus" onclick="updateQuantity('classy', -1)">-</button>
+                    <span id="qty-classy">0</span>
+                    <button class="btn-plus" onclick="updateQuantity('classy', 1)">+</button>
+                </div>
+            </div>
+
+            <div class="ticket-item">
+                <div class="ticket-info">
+                    <h3>MVPs</h3>
+                    <p class="price">₦100,000</p>
+                </div>
+                <div class="ticket-controls">
+                    <button class="btn-minus" onclick="updateQuantity('mvp', -1)">-</button>
+                    <span id="qty-mvp">0</span>
+                    <button class="btn-plus" onclick="updateQuantity('mvp', 1)">+</button>
+                </div>
+            </div>
+
+            <div class="ticket-item">
+                <div class="ticket-info">
+                    <h3>Executive Table</h3>
+                    <p class="price">₦500,000</p>
+                </div>
+                <div class="ticket-controls">
+                    <button class="btn-minus" onclick="updateQuantity('executive', -1)">-</button>
+                    <span id="qty-executive">0</span>
+                    <button class="btn-plus" onclick="updateQuantity('executive', 1)">+</button>
+                </div>
+            </div>
+
+            <div class="ticket-item">
+                <div class="ticket-info">
+                    <h3>Luxury Table</h3>
+                    <p class="price">₦1,000,000</p>
+                </div>
+                <div class="ticket-controls">
+                    <button class="btn-minus" onclick="updateQuantity('luxury', -1)">-</button>
+                    <span id="qty-luxury">0</span>
+                    <button class="btn-plus" onclick="updateQuantity('luxury', 1)">+</button>
+                </div>
+            </div>
+
+            <div class="total-section">
+                <p>Total: <strong id="total">₦0</strong></p>
+                <button class="btn-checkout" onclick="checkout()">Buy Tickets</button>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>For sponsorship and ticket inquiries:</p>
+            <p class="phones">07075980273 // 08084 158756</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hybrid Vibes Entertainment. All rights reserved.</p>
+    </footer>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
